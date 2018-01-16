@@ -140,4 +140,7 @@ html, body {
     margin: auto;
     /*order: 10000;*/
   }
+  i.volume.up.big.icon, i.volume.down.big.icon, i.volume.off.big.icon {
+    display: none;
+  }
 }
