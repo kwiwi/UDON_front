@@ -125,3 +125,19 @@ html, body {
 #adm-view {
   border: none;
 }
+
+@media (max-width: 700px) {
+  #panel-container{
+    display: none;
+  }
+  #player-panel {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: max-content;
+    border-bottom: none;
+    padding: 20px;
+    margin: auto;
+    /*order: 10000;*/
+  }
+}
