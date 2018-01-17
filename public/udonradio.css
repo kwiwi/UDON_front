@@ -132,10 +132,8 @@ html, body {
     flex-direction: column;
     flex-wrap: nowrap;
     margin: none;
-    width: 100%;
   }
   #panel-container {
-    width: 100%;
     padding-top:0px;
     display: flex;
     flex-direction: row;
@@ -145,22 +143,20 @@ html, body {
     border-bottom: 1px solid rgba(34, 36, 38, 0.15);
   }
   #right-panel {
-    border: none;
     width: 100%;
-    margin: none;
   }
-  #left-panel, #middle-panel {
+  #middle-panel, #left-panel {
     display: none;
   }
   #player-panel {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: nowrap;
     height: max-content;
     border-bottom: none;
-    padding-bottom: 25px;
-    padding-top: none;
+    padding: 10px;
     order: 2;
+    background-color: rgba(255,255,255,0.99);
   }
   i.volume.up.big.icon, i.volume.down.big.icon, i.volume.off.big.icon, input {
     display: none;
@@ -169,14 +165,15 @@ html, body {
     padding: 25px;
   }
   textarea {
-    opacity: 0.65;
+    opacity: 0.8;
+    border: 1px solid rgba(34, 36, 38, 0.25);
   }
   i.pause.big.icon, i.play.big.icon {
     /* would be great to replace the play button by a bigger one */
   }
   #layout {
     background-image: url("http://udonradio.fr/logo.png"); /*fallback*/
-    background-image: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.8) 100%), url("http://udonradio.fr/logo.png");
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.6) 100%), url("https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fsakurahouse-blog.com%2Fes%2Ffiles%2F2012%2F08%2Fudon1.jpg&f=1");
     background-position: center;
     background-size: cover; /*seems prettier than "contain". Will depend on the final logo's design.*/
     background-repeat: no-repeat;
@@ -186,8 +183,5 @@ html, body {
     /* unfortunaltely, this doesn't seem to work with older browsers. Added a fallback.
     The result'll be even prettier when we get a proper logo */
 
-  }
-  .center-y {
-    display: none;
   }
 }
