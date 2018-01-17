@@ -127,7 +127,7 @@ html, body {
 }
 
 @media (max-width: 700px) {
-  #panel-container{
+  #panel-container {
     display: none;
   }
   #player-panel {
@@ -140,7 +140,23 @@ html, body {
     margin: auto;
     /*order: 10000;*/
   }
-  i.volume.up.big.icon, i.volume.down.big.icon, i.volume.off.big.icon {
+  i.volume.up.big.icon, i.volume.down.big.icon, i.volume.off.big.icon, input {
     display: none;
+  }
+  i.pause.big.icon, i.play.big.icon {
+    /* would be great to replace the play button by a bigger one */
+  }
+  #layout {
+    background-image: url("http://udonradio.fr/logo.png"); /*fallback*/
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.8) 100%), url("http://udonradio.fr/logo.png");
+    background-position: center;
+    background-size: cover; /*seems prettier than "contain". Will depend on the final logo's design.*/
+    background-repeat: no-repeat;
+
+    /* using a linear-gradient "trick" to vary the background-img's (which is the logo)
+    alpha value so it feels light and subtle */
+    /* unfortunaltely, this doesn't seem to work with older browsers. Added a fallback.
+    The result'll be even prettier when we get a proper logo */
+
   }
 }
