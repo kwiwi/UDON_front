@@ -127,7 +127,29 @@ html, body {
 }
 
 @media (max-width: 700px) {
+  #live-chat-panel {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: none;
+    width: 100%;
+  }
   #panel-container {
+    width: 100%;
+    padding-top:0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    order: 1;
+    border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+  }
+  #right-panel {
+    border: none;
+    width: 100%;
+    margin: none;
+  }
+  #left-panel, #middle-panel {
     display: none;
   }
   #player-panel {
@@ -136,12 +158,18 @@ html, body {
     flex-wrap: nowrap;
     height: max-content;
     border-bottom: none;
-    padding: 20px;
-    margin: auto;
-    /*order: 10000;*/
+    padding-bottom: 25px;
+    padding-top: none;
+    order: 2;
   }
   i.volume.up.big.icon, i.volume.down.big.icon, i.volume.off.big.icon, input {
     display: none;
+  }
+  button.ui.icon.button {
+    padding: 25px;
+  }
+  textarea {
+    opacity: 0.65;
   }
   i.pause.big.icon, i.play.big.icon {
     /* would be great to replace the play button by a bigger one */
@@ -158,5 +186,8 @@ html, body {
     /* unfortunaltely, this doesn't seem to work with older browsers. Added a fallback.
     The result'll be even prettier when we get a proper logo */
 
+  }
+  .center-y {
+    display: none;
   }
 }
