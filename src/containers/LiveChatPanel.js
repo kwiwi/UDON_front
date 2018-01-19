@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, TextArea, List } from 'semantic-ui-react';
+import { Button, TextArea, List, Icon } from 'semantic-ui-react';
 
 import { SERVER } from '../networkGenerics';
 
@@ -71,18 +71,24 @@ const ChatInput = (props) => {
     placeholder = "C'est quoi ton ptit nom ?";
 
   return <div className="fixed">
-    <form onSubmit={props.onSubmit}>
+    <form onSubmit={props.onSubmit} style={{'display': 'flex', 'padding-bottom':'0px'}}>
     <TextArea
       placeholder={placeholder}
       value={props.value}
       onChange={props.onChange}
       style={{'resize':'none', 'padding':'14px', 'width': '100%'}}
       onKeyPress={onKeyPress}
+      className="dynamic"
+      rows={1}
     />
-    <div style={{'display': 'flex', 'flexFlow': 'row nowrap'}}>
-      <Button type='button' disabled className="fixed" style={{'display':'none'}}>Like</Button>
+    <div style={{'display': 'flex', 'flexFlow': 'row nowrap'}} className="fixed">
       <div className="dynamic"/>
-      <Button type='submit' className="fixed" disabled={props.disabled}>Envoyer</Button>
+      <Button  color='red'  className="fixed"
+      disabled={props.disabled}>
+            <Button.Content visible>
+              <Icon name='reply' />
+            </Button.Content>
+      </Button>
     </div>
     </form>
   </div>

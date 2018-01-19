@@ -131,10 +131,9 @@ html, body {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin: none;
+    padding-bottom: 2px;
   }
   #panel-container {
-    padding-top:0px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -158,11 +157,11 @@ html, body {
     order: 2;
     background-color: rgba(255,255,255,0.99);
   }
-  i.volume.up.big.icon, i.volume.down.big.icon, i.volume.off.big.icon, input {
+  input {
     display: none;
   }
   button.ui.icon.button {
-    padding: 25px;
+    padding: 15px;
   }
   textarea {
     opacity: 0.8;
