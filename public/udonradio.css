@@ -183,7 +183,7 @@ html, body {
   }
   #layout {
     background-image: url("http://udonradio.fr/logo.png"); /*fallback*/
-    background-image: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.6) 100%), url("https://images.duckduckgo.com/iu/?u=http%3A%2F%2Fsakurahouse-blog.com%2Fes%2Ffiles%2F2012%2F08%2Fudon1.jpg&f=1");
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.6) 100%), url("http://udonradio.fr/peq.jpg");
     background-position: center;
     background-size: cover; /*seems prettier than "contain". Will depend on the final logo's design.*/
     background-repeat: no-repeat;
