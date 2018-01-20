@@ -125,6 +125,10 @@ html, body {
 #adm-view {
   border: none;
 }
+#chatbox {
+  minHeight: 0px;
+  overflow: auto;
+}
 
 @media (max-width: 700px) {
   #live-chat-panel {
