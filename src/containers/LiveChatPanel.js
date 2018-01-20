@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button, TextArea, List, Icon } from 'semantic-ui-react';
 
+
 import { SERVER } from '../networkGenerics';
 
 class ChatMessages extends Component {
@@ -34,7 +35,9 @@ class ChatMessages extends Component {
   );
 
   render = () => (
-      <List className='dynamic' style={{'minHeight': '0px', overflow:'auto'}} divided>
+      <List className='dynamic'
+      id="chatbox"
+      divided>
       {this.props.messages.map(this.makeMessage)}
       <div ref={(el) => {this.end = el;}}/>
     </List>
@@ -76,14 +79,19 @@ const ChatInput = (props) => {
       placeholder={placeholder}
       value={props.value}
       onChange={props.onChange}
-      style={{'resize':'none', 'padding':'14px', 'width': '100%'}}
+      style={{'resize':'none', 'padding':'4px', 'margin':'auto'}}
       onKeyPress={onKeyPress}
       className="dynamic"
       rows={1}
     />
     <div style={{'display': 'flex', 'flexFlow': 'row nowrap'}} className="fixed">
       <div className="dynamic"/>
-      <Button  color='red'  className="fixed"
+      <Button
+      floated='right'
+      compact
+      color="red"
+      className="fixed"
+      size='tiny'
       disabled={props.disabled}>
             <Button.Content visible>
               <Icon name='reply' />

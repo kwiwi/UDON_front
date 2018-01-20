@@ -131,20 +131,34 @@ html, body {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    padding-bottom: 2px;
+    padding: 2px;
+  }
+  #chatbox {
+    minHeight: 0px;
+    overflow: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
   }
   #panel-container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     overflow: hidden;
-    order: 1;
+    order: 2;
     border-bottom: 1px solid rgba(34, 36, 38, 0.15);
   }
   #right-panel {
     width: 100%;
   }
-  #middle-panel, #left-panel {
+  #left-panel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    order: 1;
+  }
+  #middle-panel {
     display: none;
   }
   #player-panel {
@@ -154,7 +168,7 @@ html, body {
     height: max-content;
     border-bottom: none;
     padding: 10px;
-    order: 2;
+    order: 3;
     background-color: rgba(255,255,255,0.99);
   }
   input {
@@ -166,9 +180,6 @@ html, body {
   textarea {
     opacity: 0.8;
     border: 1px solid rgba(34, 36, 38, 0.25);
-  }
-  i.pause.big.icon, i.play.big.icon {
-    /* would be great to replace the play button by a bigger one */
   }
   #layout {
     background-image: url("http://udonradio.fr/logo.png"); /*fallback*/
