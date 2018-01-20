@@ -129,34 +129,32 @@ html, body {
   minHeight: 0px;
   overflow: auto;
 }
+#menu_telephone {
+  display: none;
+}
 
 @media (max-width: 700px) {
+  #menu_telephone {
+    display: flex;
+  }
   #live-chat-panel {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     padding: 2px;
+    order: 2;
   }
   #chatbox {
-    minHeight: 0px;
     overflow: auto;
     padding-right: 20px;
     padding-left: 20px;
     padding-top: 10px;
   }
-  #panel-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow: hidden;
-    order: 2;
-    border-bottom: 1px solid rgba(34, 36, 38, 0.15);
-  }
   #right-panel {
     width: 100%;
   }
   #left-panel {
-    display: flex;
+    display: none;
     flex-direction: row;
     flex-wrap: nowrap;
     overflow: scroll;
@@ -191,6 +189,7 @@ html, body {
     background-position: center;
     background-size: cover; /*seems prettier than "contain". Will depend on the final logo's design.*/
     background-repeat: no-repeat;
+    display: column;
 
     /* using a linear-gradient "trick" to vary the background-img's (which is the logo)
     alpha value so it feels light and subtle */

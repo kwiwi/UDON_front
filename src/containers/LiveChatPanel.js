@@ -79,7 +79,7 @@ const ChatInput = (props) => {
       placeholder={placeholder}
       value={props.value}
       onChange={props.onChange}
-      style={{'resize':'none', 'padding':'4px', 'margin':'auto'}}
+      style={{'resize':'none', 'padding':'6px', 'margin':'auto'}}
       onKeyPress={onKeyPress}
       className="dynamic"
       rows={1}
@@ -91,7 +91,6 @@ const ChatInput = (props) => {
       compact
       color="red"
       className="fixed"
-      size='tiny'
       disabled={props.disabled}>
             <Button.Content visible>
               <Icon name='reply' />
