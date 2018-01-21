@@ -111,7 +111,7 @@ class Layout extends Component {
             <Menu.Item
             onClick={() => {this.changeCurrentView(this.tabs[0]);}}
             >
-              <Icon name="tasks" size='large'/>
+              <Icon name="list layout" size='large'/>
             </Menu.Item>
             <Menu.Item
             onClick={() => {this.changeCurrentView(this.tabs[1]);}}
@@ -119,9 +119,9 @@ class Layout extends Component {
               <Icon name="question" size='large'/>
             </Menu.Item>
             <Menu.Item
-            onClick={() => {this.changeCurrentView(this.tabs[4]);}}
+            onClick={() => {this.changeCurrentView(this.tabs[0]);}}
             >
-              <Icon name="sign in" size='large'/>
+              <Icon name="user circle" size='large'/>
             </Menu.Item>
           </Menu>
         </div>
