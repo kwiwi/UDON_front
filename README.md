@@ -10,12 +10,13 @@ npm start
 Ok so I really don't know much when it comes to reactjs (and coding in general), so bear with me. I'm building the mobile version of udonradio.fr. The idea is to squish the 3 panneled flex display view into one, which implies using a lot of `display: none`s in the css stylesheet, since I can't get anything done with reactjs. I know it's dumb, but it is straightforward and it somehow kinda works.
 
 Flash-course on how the site is constructed structurally so you can understand what's going on :
+  - menu = desktop menu lets you choose more options than the mobile menu. The mobile menu lets you display the chat on middlepanel since rightpannel isn't displayed ('member `display:none`?)
   - playerpanel = top panel on desktop, bottom panel on mobile device. Has the play/pause icons + the metadata of the song + a volume input (not on mobile)
   - rightpanel = displays chat. Won't be used on mobile
   - middlepanel = displays what the user clicks on in the menu (be it the desktop-style side menu or the mobile-style top menu)
   - leftpanel = inexistent
   - panelcontainer = contains rightpannel + middlepannel + menu. Doesn't contain the playerpannel
-  - menu = desktop menu lets you choose more options than the mobile menu. The mobile menu lets you display the chat on middlepanel since rightpannel isn't displayed ('member `display:none`?)
+  
 
 # What has been done
 
