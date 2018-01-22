@@ -25,7 +25,6 @@ As of today (22 jan 2018), we have :
   - a "body", **temporarily** displaying the rightpannel so we can see the chat is flowing well with the mobile structure
   - a background semi-transparent image on the "body" of the webpage (not the playerpanel nor the topmenu, which stay white ftm)
   - a nonfunctionnal and redundant topmenu (casted as a POC, we would ideally need to re-design dynamically the desktop menu)
-  - see provided image of render for more details
   
 # kwiwi's hopes and dreams
 
@@ -36,5 +35,6 @@ For the mobile version to be pulled, we still need :
     - rewriting tings in layout.js (tried it, didn't work out at all)
   - that's actually all I can think about rn, i'll update if anything comes around
   
+  Don't be scared to ask for about anything, i'll gladly help with anything I can (not much when it comes to programming unfortunately).
   Thanks!
 
