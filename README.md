@@ -17,7 +17,7 @@ Flash-course on how the site is constructed structurally so you can understand w
   - leftpanel = inexistent
   - panelcontainer = contains rightpannel + middlepannel + menu. Doesn't contain the playerpannel
   
-So, to sum it up, the idea is the hide (using css' `display:none`) 2 of the 3 pannels in the pannelcontainer so the information displayed isn't overwhelming for a mobile experience.
+**So, to sum things up, the idea is to hide (using css' `display:none`) 2 of the 3 pannels in the pannelcontainer so the information displayed isn't overwhelming for a mobile experience.**
 
 
 # What has been done
@@ -37,6 +37,6 @@ For the mobile version to be pulled, we still need :
     - rewriting tings in layout.js (tried it, didn't work out at all)
   - that's actually all I can think about rn, i'll update if anything comes around
   
-  Don't be scared to ask for about anything, i'll gladly help with anything I can (not much when it comes to programming unfortunately).
+  I'll gladly help with anything I can (not much when it comes to programming unfortunately).
   Thanks!
 
