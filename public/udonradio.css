@@ -96,7 +96,7 @@ html, body {
 
 #about-view {
   padding: 20px;
-  overflow: scroll;
+  overflow: auto;
 }
 
 .texte {
