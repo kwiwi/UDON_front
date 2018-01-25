@@ -6,14 +6,7 @@ const AboutView = (props) => (
   <div id="about-view" style={{ height: '100%', width: '100%'}}>
   <Grid textAlign="justified">
     <Grid.Row>
-      <Grid.Column width={3}>
-        <Modal basic dimmer={'blurring'} trigger={<Image id="image_trigger_modal" src='/peq.jpg' />} closeIcon>
-          <Modal.Content>
-            <Image style={{ height: '100%', width: '100%'}} wrapped src='/peq.jpg' />
-          </Modal.Content>
-        </Modal>
-      </Grid.Column>
-      <Grid.Column width={13}>
+      <Grid.Column width={16}>
         <p className="texte" id="texte_moins">Définition Wikipédia : "Les udon (うどん/饂飩, udon?) sont, avec les soba, les pâtes les plus consommées au Japon. Elles sont préparées avec de la farine de blé tendre (froment). Ce sont les pâtes japonaises les plus épaisses : de 2 à 4 mm de largeur. Leur couleur varie de blanc à blanc cassé et leur consistance est molle et élastique."</p>
       </Grid.Column>
     </Grid.Row>
@@ -33,7 +26,7 @@ const AboutView = (props) => (
 
     <Grid.Row>
       <Grid.Column width={16}>
-        <p className="texte">Au-delà de la "simple" aspiration à produire du contenu varié (emissions, sessions live, sets, etc...), UDON chérit un concept en particulier. Celui d'une radio collaborative pour tous: à laquelle *tout le monde* puisse participer. Car si notre désir est de partager nos goûts musicaux, il est aussi de découvrir ceux des autres, et d'offrir ainsi à tout le monde l'opportunité de partager les morceaux qu'ils ou elles préfèrent et de les faire diffuser aux auditeurs, sur une plateforme dédiée.</p>
+        <p className="texte">Au-delà de la "simple" aspiration à produire du contenu varié (emissions, sessions live, sets, etc...), UDON chérit un concept en particulier. Celui d''une radio collaborative pour tous: à laquelle *tout le monde* puisse participer.</p>
       </Grid.Column>
     </Grid.Row>
 
