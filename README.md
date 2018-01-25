@@ -7,7 +7,10 @@ npm start
 
 # Introduction
 
-Ok so I really don't know much when it comes to reactjs (and coding in general), so bear with me. I'm building the mobile version of udonradio.fr. The idea is to squish the 3 panneled flex display view into one, which implies using a lot of `display: none`s in the css stylesheet, since I can't get anything done with reactjs. I know it's dumb, but it is straightforward and it somehow kinda works.
+Ok so I really don't know much when it comes to reactjs (and coding in general), so bear with me. 
+
+# mobile version
+I'm building the mobile version of udonradio.fr. The idea is to squish the 3 panneled flex display view into one, which implies using a lot of `display: none`s in the css stylesheet, since I can't get anything done with reactjs. I know it's dumb, but it is straightforward and it somehow kinda works.
 
 Flash-course on how the site is constructed structurally so you can understand what's going on :
   - menu = desktop menu lets you choose more options than the mobile menu. The mobile menu lets you display the chat on middlepanel since rightpannel isn't displayed ('member `display:none`?)
@@ -19,14 +22,15 @@ Flash-course on how the site is constructed structurally so you can understand w
   
 **So, to sum things up, the idea is to hide (using css' `display:none`) 2 of the 3 pannels in the pannelcontainer so the information displayed isn't overwhelming for a mobile experience.**
 
-
-# What has been done
-
 As of today (22 jan 2018), we have :
   - a fitted and restyled playerpanel that won't display the volume input since every mobile device has its own hardware volume control (you can sill mute the sound directly on the webpage)
   - a "body", **temporarily** displaying the rightpannel so we can see the chat is flowing well with the mobile structure
   - a background semi-transparent image on the "body" of the webpage (not the playerpanel nor the topmenu, which stay white ftm)
   - a nonfunctionnal and redundant topmenu (casted as a POC, we would ideally need to re-design dynamically the desktop menu)
+
+# "About" layout
+
+Regarding the "About" section, the layout needs to be fixed. First we need a desktop functionnal and pretty version. We'll then focus on the mobile port.
   
 # kwiwi's hopes and dreams
 
@@ -36,6 +40,10 @@ For the mobile version to be pulled, we still need :
     - swtiching from desktop-friendly tabs to mobile-friendly tabs (which means : -uploadview -administration +chat on middlepanel)
     - rewriting tings in layout.js (tried it, didn't work out at all)
   - that's actually all I can think about rn, i'll update if anything comes around
+  
+  For the "About" section, we need :
+  - a working desktop version
+  - a working mobile slimmed out version
   
   I'll gladly help with anything I can (not much when it comes to programming unfortunately).
   Thanks!
