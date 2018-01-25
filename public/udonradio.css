@@ -115,6 +115,10 @@ html, body {
   color: rgb(10, 0, 0);
 }
 
+#image_trigger_modal {
+  margin-top: 10px;
+}
+
 #image_trigger_modal:hover {
   opacity: 0.8;
 }
