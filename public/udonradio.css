@@ -49,7 +49,7 @@ html, body {
   width: 210px;
 }
 #right-panel {
-  width: 340px;
+  width: 300px;
   border-left: 1px solid rgba(34, 36, 38, 0.15);
 }
 #middle-panel {
@@ -96,7 +96,27 @@ html, body {
 
 #about-view {
   padding: 20px;
+  overflow: scroll;
+}
 
+.texte {
+  text-indent: 5px;
+  font-size: 1.1em;
+}
+
+#texte_moins {
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1em;
+  font-weight: lighter;
+}
+
+#texte_plus {
+  color: rgb(10, 0, 0);
+}
+
+#image_trigger_modal:hover {
+  opacity: 0.8;
 }
 
 #upload-view {
@@ -150,7 +170,7 @@ html, body {
     padding-left: 20px;
     padding-top: 10px;
   }
-  #right-panel {
+  #middle-panel {
     width: 100%;
   }
   #left-panel {
@@ -160,7 +180,7 @@ html, body {
     overflow: scroll;
     order: 1;
   }
-  #middle-panel {
+  #right-panel {
     display: none;
   }
   #player-panel {
@@ -185,7 +205,7 @@ html, body {
   }
   #layout {
     background-image: url("http://udonradio.fr/logo.png"); /*fallback*/
-    background-image: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.6) 100%), url("http://udonradio.fr/peq.jpg");
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.6) 100%), url("https://start.duckduckgo.com/?q=udon&t=vivaldi&iax=images&ia=images");
     background-position: center;
     background-size: cover; /*seems prettier than "contain". Will depend on the final logo's design.*/
     background-repeat: no-repeat;
